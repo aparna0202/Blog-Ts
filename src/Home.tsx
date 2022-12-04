@@ -1,5 +1,5 @@
 import Header from "./Header";
-import { Blog } from "./Create";
+import { Blog } from "./Editor";
 
 type Props = {
   blog: Blog[];
