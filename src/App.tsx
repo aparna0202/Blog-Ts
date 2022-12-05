@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div>
-      <Header />
+      <Header  />
       <Routes>
         <Route path="/" element={<Home blog={blog} />} />
         <Route
@@ -27,7 +27,17 @@ function App() {
             />
           }
         />
-        <Route path="/manage" element={<Manage blog={blog} data={data} setBlog={setBlog} setData={setData} />} />
+        <Route
+          path="/manage"
+          element={
+            <Manage
+              blog={blog}
+              data={data}
+              setBlog={setBlog}
+              setData={setData}
+            />
+          }
+        />
         <Route
           path="/editor"
           element={
@@ -36,6 +46,7 @@ function App() {
               blog={blog}
               setData={setData}
               data={data}
+              
             />
           }
         />

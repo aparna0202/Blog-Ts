@@ -32,7 +32,7 @@ const Manage = ({ setBlog, blog, data, setData }: Props) => {
           {data.map((item, index) =>
             !blogOpen ? (
               <div className="flex justify-between">
-                <div>{item.title}</div>
+                <div >{item.title}</div>
                 <div className="flex items-center text-[18px]">
                   <button
                     className="bg-white mr-3 w-16 h-8 border rounded-md"
@@ -55,6 +55,7 @@ const Manage = ({ setBlog, blog, data, setData }: Props) => {
                 setData={setData}
                 data={data}
                 currentBlog={currentBlog}
+                setCurrentBlog={setCurrentBlog}
               />
             )
           )}
@@ -88,6 +89,7 @@ const Manage = ({ setBlog, blog, data, setData }: Props) => {
                 setData={setData}
                 data={data}
                 currentBlog={currentBlog}
+                setCurrentBlog={setCurrentBlog}
               />
             )
           )}
